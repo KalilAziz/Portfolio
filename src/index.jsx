@@ -8,7 +8,7 @@ import { Page404 } from './templates/Page404';
 
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import HeaderComponent from './components/Header';
-
+import FooterComponent from './components/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -20,5 +20,6 @@ root.render(
       <Route path="*" element={<Page404 />} />
     </Routes>
     <GlobalStyle />
+    <FooterComponent />
   </BrowserRouter>,
 );
