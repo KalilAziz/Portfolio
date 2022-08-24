@@ -64,15 +64,7 @@ export const Section = styled.section`
 
 
       }
-      @media (max-width: 600px) {
-        .buttons{
-            margin-bottom: 20px;
-            margin: 0 auto;
-          }
-        .buttons div button{
-            width: 350px;
-          }
-        }
+
 
       .conteudo{
         flex: 1;
@@ -178,6 +170,17 @@ export const Section = styled.section`
 
 
     }
+    @media (max-width: 600px) {
+        .buttons{
+            margin: 0 auto;
+          }
+        .buttons div button{
+            width: 350px;
+          }
+        .conteudo{
+          margin: 30px 0;
+        }
+        }
 
 
 
