@@ -1,0 +1,14 @@
+$colorGradient: linear-gradient(
+  144deg,
+  rgba(255, 98, 0, 1) 7%,
+  rgba(55, 70, 227, 1) 100%
+);
+
+.button {
+  color: white;
+  background: $colorGradient;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  margin: auto 0;
+}
