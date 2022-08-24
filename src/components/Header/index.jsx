@@ -1,30 +1,24 @@
+/* eslint-disable */
+import { useState } from 'react';
 import Button from '../Button';
-import style from './styles.module.scss';
-const Header = () => {
+import MenuDesktop from './MenuDesktop/MenuDesktop';
+import MenuMobile from './MenuMobile/MenuMobile';
+import { Header } from './styles';
+
+const HeaderComponent = () => {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (
-    <header className={style.header}>
-      <div className={style.container}>
-        <img src="./image/icon.png" alt="" />
-        <nav>
-          <ul>
-            <li>
-              <a href="/">Início</a>
-            </li>
-            <li>
-              <a href="/projetos">Projetos</a>
-            </li>
-            <li>
-              <a href="/sobrenos">Sobre</a>
-            </li>
-            <li>
-              <a href="/suporte">Suporte</a>
-            </li>
-          </ul>
-        </nav>
-        <Button>Entre em contato</Button>
-      </div>
-    </header>
+    <>
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <MenuDesktop
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+    </>
   );
 };
 
-export default Header;
+export default HeaderComponent;

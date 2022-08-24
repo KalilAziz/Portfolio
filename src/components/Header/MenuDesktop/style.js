@@ -1,4 +1,6 @@
-.header {
+import styled from 'styled-components';
+
+export const Header = styled.header`
   position: fixed;
   top: 0px;
   left: 0px;
@@ -46,6 +48,23 @@
       }
     }
 
+    .sgvMenu{
+      color: white;
+      display: none;
+    }
+
+    @media (max-width: 720px) {
+          nav, button{
+            display: none;
+          }
+          .sgvMenu{
+          display: flex;
+          align-items: center;
+        }
+      }
+}
+
 
   }
 }
+`;

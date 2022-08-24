@@ -1,9 +1,8 @@
-$ColorBlack: #000;
-$ColorGray: #080808;
+import styled from 'styled-components';
 
-.section1 {
-  background: $ColorBlack;
-  padding: 200px 0;
+export const Section = styled.section`
+  background: #000;
+  padding: 80px 0;
 
   .container {
     max-width: 1120px;
@@ -57,6 +56,20 @@ $ColorGray: #080808;
     }
 
     @media (max-width: 720px) {
+      .conteudo{
+        h1{
+          text-align: center;
+          font-size: 30px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+
+      .contato {
+        text-align: center;
+      }
+
       .imageTop {
         display: block;
       }
@@ -66,16 +79,4 @@ $ColorGray: #080808;
     }
   }
 }
-
-@media (max-width: 720px) {
-  .section1 {
-    padding: 100px 0;
-
-    h1, p {
-      text-align: center;
-    }
-    .contato {
-      text-align: center;
-    }
-  }
-}
+`;

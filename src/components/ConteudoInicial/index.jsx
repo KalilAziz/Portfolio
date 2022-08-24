@@ -1,27 +1,27 @@
 import Button from '../Button';
-import styles from './styles.module.scss';
+import { Section } from './style';
 const ConteudoInicial = () => {
   return (
-    <div className={styles.section1}>
-      <div className={styles.container}>
-        <img className={styles.imageTop} src="./image/celular.png" alt="" />
+    <Section>
+      <div className="container">
+        <img className="imageTop" src="./image/celular.png" alt="" />
 
-        <div className={styles.conteudo}>
+        <div className="conteudo">
           <h1>DESENVOLVIMENTO DE APLICAÇÕES WEB E MOBILE</h1>
           <p>
             Aplicações completas, elegantes, com qualidade de código e
             otimizadas para o SEO.
           </p>
 
-          <div className={styles.contato}>
+          <div className="contato">
             <Button>Ver portfolio</Button>
             <a href="">Conhecer o dev</a>
           </div>
         </div>
 
-        <img className={styles.imageBotton} src="./image/celular.png" alt="" />
+        <img className="imageBotton" src="./image/celular.png" alt="" />
       </div>
-    </div>
+    </Section>
   );
 };
 
