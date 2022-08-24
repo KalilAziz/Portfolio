@@ -1,18 +1,14 @@
-import styles from './styles.module.scss';
+import { Section } from './styles';
 import Button from '../Button';
 const Sobre = () => {
   return (
-    <div className={styles.section2}>
-      <div className={styles.container}>
+    <Section>
+      <div className="container">
         <h1>Sobre</h1>
-        <div className={styles.sobre}>
-          <div className={styles.perfil}>
-            <img
-              className={styles.imageModelo}
-              src="./image/modelo.jpeg"
-              alt=""
-            />
-            <div className={styles.redesSociais}>
+        <div className="sobre">
+          <div className="perfil">
+            <img className="imageModelo" src="./image/modelo.jpeg" alt="" />
+            <div className="redesSociais">
               <a href="" target="_blank" className="">
                 <i className="uil uil-linkedin-alt"></i>
               </a>
@@ -37,7 +33,7 @@ const Sobre = () => {
               </a>
             </div>
           </div>
-          <div className={styles.conteudo}>
+          <div className="conteudo">
             <p>
               Meu nome é Kalil, tenho 20 anos e moro em Mogi das Cruzes - SP.
               Sou Desenvolvedor Front End, formado em Análise e desenvolvimento
@@ -52,7 +48,7 @@ const Sobre = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 export default Sobre;

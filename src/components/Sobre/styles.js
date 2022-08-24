@@ -1,8 +1,7 @@
-$ColorBlack: #000;
-$ColorGray: #080808;
+import styled from 'styled-components';
 
-.section2 {
-  background: $ColorGray;
+export const Section = styled.section`
+  background: #080808;
 
   .container {
     max-width: 1120px;
@@ -27,8 +26,8 @@ $ColorGray: #080808;
       max-width: 400px;
 
       .imageModelo {
-        width: 400px;
-        height: 500px;
+        max-width: 350px;
+        height: auto;
         border-radius: 20px;
         display: block;
       }
@@ -49,13 +48,23 @@ $ColorGray: #080808;
         margin-bottom: 25px;
       }
     }
+    @media (max-width: 720px) {
+      .perfil {
+        .imageModelo {
+          max-width: 250px;
+        }
+        .redesSociais {
+          margin-top: 10px;
+          font-size: 20px;
+        }
+    }
+        .conteudo {
+          text-align: center;
+        }
+      }
   }
+
 }
 
-@media (max-width: 720px) {
-  .section2 {
-    .conteudo {
-      text-align: center;
-    }
-  }
-}
+
+`;
