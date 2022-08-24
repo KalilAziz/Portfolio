@@ -9,6 +9,7 @@ export const Section = styled.section`
       color: white;
       margin-bottom: 20px;
     }
+
     .container{
       max-width: 1120px;
       margin: 0px auto;
@@ -66,6 +67,7 @@ export const Section = styled.section`
       @media (max-width: 600px) {
         .buttons{
             margin-bottom: 20px;
+            margin: 0 auto;
           }
         .buttons div button{
             width: 350px;
@@ -173,5 +175,10 @@ export const Section = styled.section`
           }
         }
 
-      }
+
+
+    }
+
+
+
 `;
