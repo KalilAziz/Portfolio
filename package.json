@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "gitAdd": "git add .",
-    "gitCommit": "git commit -m 'Correção de bugs'",
+    "gitCommit": "git commit -m 'Correção de bugs e false reset'",
     "gitPush": " git push"
   },
   "eslintConfig": {

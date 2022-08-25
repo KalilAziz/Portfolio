@@ -10,7 +10,7 @@ export const WithScrollReveal = (Original) =>
       this.target = [];
     }
     componentDidMount() {
-      ScrollReveal({ reset: true }).reveal(
+      ScrollReveal({ reset: false }).reveal(
         this.target,
         this.props.options,
         this.props.interval,
