@@ -5,7 +5,7 @@ const Sobre = () => {
   return (
     <Section>
       <div className="container">
-        <Scroling options={{ distance: '20px' }} interval={500}>
+        <Scroling>
           <h1>Sobre</h1>
           <div className="sobre">
             <div className="perfil">

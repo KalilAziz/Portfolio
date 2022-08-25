@@ -1,36 +1,29 @@
-/* eslint-disable */
-import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
-import ScrollReveal from 'scrollreveal';
+import React, { useRef, useEffect } from 'react';
+import scrollReveal from 'scrollreveal';
 
-export const WithScrollReveal = (Original) =>
-  class extends Component {
-    constructor(props) {
-      super(props);
-      this.target = [];
-    }
-    componentDidMount() {
-      ScrollReveal().reveal(
-        this.target,
-        this.props.options,
-        this.props.interval,
-      );
-    }
-    componentWillUnmount() {
-      ScrollReveal().clean(this.childNodes);
-    }
-    render() {
-      const children = React.Children.map(this.props.children, (child) =>
-        React.cloneElement(child, {
-          ref: (c) => this.target.push(findDOMNode(c)),
-        }),
-      );
-      return <Original {...this.props}>{children}</Original>;
-    }
-  };
+// eslint-disable-next-line
+const Scroling = ({ children, style }) => {
+  const sectionRef = useRef(null);
+  useEffect(() => {
+    if (sectionRef.current)
+      scrollReveal().reveal(sectionRef.current, {
+        reset: true,
+        delay: 100,
+        distance: '1000px',
+        origin: 'left',
+      });
+  }, []);
 
-const Dad = ({ children }) => <>{children}</>;
+  return (
+    <section ref={sectionRef} style={style} className="" data-testid="section">
+      {children}
+    </section>
+  );
+};
 
-const Scroling = WithScrollReveal(Dad);
+// you can check scrolling like this:
+document.onscroll = function () {
+  console.log('scrawwwwl');
+};
 
 export default Scroling;

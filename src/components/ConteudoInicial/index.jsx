@@ -4,7 +4,7 @@ import { Section } from './style';
 const ConteudoInicial = () => {
   return (
     <Section>
-      <Scroling options={{ distance: '20px' }} interval={500}>
+      <Scroling>
         <div className="container">
           <img className="imageTop" src="./image/celular.png" alt="" />
 

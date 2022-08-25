@@ -16,7 +16,7 @@ const Qualificacoes = () => {
 
   return (
     <Section active={qualificIsVisible}>
-      <Scroling options={{ distance: '20px' }} interval={500}>
+      <Scroling>
         <h1>Qualificações</h1>
         <div className="container">
           <div className="buttons">
@@ -71,7 +71,7 @@ const Qualificacoes = () => {
           </div>
           <div className="conteudo">
             {qualificIsVisible.graduacao && (
-              <Scroling options={{ distance: '20px' }} interval={500}>
+              <Scroling>
                 <div className="graduacao">
                   <h2>Ciências da Computação</h2>
                   <p>Universidade Federal de Catalão - UFCAT</p>
@@ -88,7 +88,7 @@ const Qualificacoes = () => {
 
             {qualificIsVisible.cursos && (
               <>
-                <Scroling options={{ distance: '20px' }} interval={500}>
+                <Scroling>
                   <div className="cursos">
                     <h2>HTML5, CSS3, JavaScript, Git e SASS</h2>
                     <p>B7 Web - Bonieky Lacerda</p>
@@ -138,7 +138,7 @@ const Qualificacoes = () => {
             )}
 
             {qualificIsVisible.experiencia && (
-              <Scroling options={{ distance: '20px' }} interval={500}>
+              <Scroling>
                 <div className="experiencias">
                   <h2>Programador do Grupo Vale - Frelancer</h2>
                   <p>Catalão - Goiás</p>
