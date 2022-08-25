@@ -5,6 +5,7 @@ import Sobre from '../../components/Sobre';
 import Qualificacoes from '../../components/Qualificacoes';
 import ProjetoIndex from '../../components/ProjetoIndex';
 import HabilidadesETecnologias from '../../components/HabilidadesETecnologias';
+
 export default function App() {
   return (
     <>

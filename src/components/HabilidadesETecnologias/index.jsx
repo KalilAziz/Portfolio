@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Scroling from '../Scroling/Scroling';
 import { Section } from './style';
 
 const stateInitialState = {
@@ -51,92 +52,96 @@ const HabilidadesETecnologias = () => {
         <div className="conteudo">
           {qualificIsVisible.frontEnd && (
             <>
-              <div className="frontEnd">
-                <h2>HTML5 e CSS3</h2>
-                <div className="periodo">
-                  <span className="porcentagem">80%</span>
+              <Scroling options={{ distance: '20px' }} interval={500}>
+                <div className="frontEnd">
+                  <h2>HTML5 e CSS3</h2>
+                  <div className="periodo">
+                    <span className="porcentagem">80%</span>
+                  </div>
+                  <div className="progresso">
+                    <div className="porcentConclusaoHtmlCSS"></div>
+                  </div>
                 </div>
-                <div className="progresso">
-                  <div className="porcentConclusaoHtmlCSS"></div>
+                <div className="frontEnd">
+                  <h2>JavaScript</h2>
+                  <div className="periodo">
+                    <span className="porcentagem">80%</span>
+                  </div>
+                  <div className="progresso">
+                    <div className="porcentConclusaoJs"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="frontEnd">
-                <h2>JavaScript</h2>
-                <div className="periodo">
-                  <span className="porcentagem">80%</span>
+                <div className="frontEnd">
+                  <h2>TypeScript</h2>
+                  <div className="periodo">
+                    <span className="porcentagem">35%</span>
+                  </div>
+                  <div className="progresso">
+                    <div className="porcentConclusaoTs"></div>
+                  </div>
                 </div>
-                <div className="progresso">
-                  <div className="porcentConclusaoJs"></div>
+                <div className="frontEnd">
+                  <h2>SASS</h2>
+                  <div className="periodo">
+                    <span className="porcentagem">90%</span>
+                  </div>
+                  <div className="progresso">
+                    <div className="porcentConclusaoSass"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="frontEnd">
-                <h2>TypeScript</h2>
-                <div className="periodo">
-                  <span className="porcentagem">35%</span>
+                <div className="frontEnd">
+                  <h2>Git e GitHub</h2>
+                  <div className="periodo">
+                    <span className="porcentagem">95%</span>
+                  </div>
+                  <div className="progresso">
+                    <div className="porcentConclusaoGitGitHub"></div>
+                  </div>
                 </div>
-                <div className="progresso">
-                  <div className="porcentConclusaoTs"></div>
+                <div className="frontEnd">
+                  <h2>React.js</h2>
+                  <div className="periodo">
+                    <span className="porcentagem">70%</span>
+                  </div>
+                  <div className="progresso">
+                    <div className="porcentConclusaoReactJs"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="frontEnd">
-                <h2>TypeScript</h2>
-                <div className="periodo">
-                  <span className="porcentagem">90%</span>
+                <div className="frontEnd">
+                  <h2>Next.js</h2>
+                  <div className="periodo">
+                    <span className="porcentagem">60%</span>
+                  </div>
+                  <div className="progresso">
+                    <div className="porcentConclusaoNextJs"></div>
+                  </div>
                 </div>
-                <div className="progresso">
-                  <div className="porcentConclusaoSass"></div>
-                </div>
-              </div>
-              <div className="frontEnd">
-                <h2>TypeScript</h2>
-                <div className="periodo">
-                  <span className="porcentagem">95%</span>
-                </div>
-                <div className="progresso">
-                  <div className="porcentConclusaoGitGitHub"></div>
-                </div>
-              </div>
-              <div className="frontEnd">
-                <h2>TypeScript</h2>
-                <div className="periodo">
-                  <span className="porcentagem">70%</span>
-                </div>
-                <div className="progresso">
-                  <div className="porcentConclusaoReactJs"></div>
-                </div>
-              </div>
-              <div className="frontEnd">
-                <h2>TypeScript</h2>
-                <div className="periodo">
-                  <span className="porcentagem">60%</span>
-                </div>
-                <div className="progresso">
-                  <div className="porcentConclusaoNextJs"></div>
-                </div>
-              </div>
+              </Scroling>
             </>
           )}
 
           {qualificIsVisible.backEnd && (
             <>
-              <div className="backEnd">
-                <h2>MongoDB</h2>
-                <div className="periodo">
-                  <span className="porcentagem">40%</span>
+              <Scroling options={{ distance: '20px' }} interval={500}>
+                <div className="backEnd">
+                  <h2>MongoDB</h2>
+                  <div className="periodo">
+                    <span className="porcentagem">40%</span>
+                  </div>
+                  <div className="progresso">
+                    <div className="porcentConclusaoMongoDB"></div>
+                  </div>
                 </div>
-                <div className="progresso">
-                  <div className="porcentConclusaoMongoDB"></div>
+                <div className="backEnd">
+                  <h2>FireBase</h2>
+                  <div className="periodo">
+                    <span className="porcentagem">50%</span>
+                  </div>
+                  <div className="progresso">
+                    <div className="porcentConclusaoFireBase"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="backEnd">
-                <h2>FireBase</h2>
-                <div className="periodo">
-                  <span className="porcentagem">50%</span>
-                </div>
-                <div className="progresso">
-                  <div className="porcentConclusaoFireBase"></div>
-                </div>
-              </div>
+              </Scroling>
             </>
           )}
         </div>
