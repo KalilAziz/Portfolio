@@ -44,138 +44,32 @@ export const Section = styled.section`
             active.frontEnd &&
             css`
           .buttonGraduacao{
-            background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
+            background: var(--Gradient);
           }`}
 
           ${({ active }) =>
             active.backEnd &&
             css`
           .buttonCursos{
-            background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
+            background: var(--Gradient);
           }`}
 
           ${({ active }) =>
             active.experiencia &&
             css`
           .buttonExperiencia{
-            background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
+            background: var(--Gradient);
           }`}
         }
 
 
       }
 
-
       .conteudo{
         flex: 1;
         min-width: 300px;
         padding: 0px 30px;
-
-        .frontEnd{
-          margin-bottom: 15px;
-          .periodo{
-            font-size: 0.8rem;
-            color: #CCC;
-            display: flex;
-            justify-content: flex-end;
-
-            .porcentagem{
-              color: white;
-              font-size: 1.5rem;
-            }
-          }
-          .progresso{
-            height: 13px;
-            border-radius: 5px;
-            background: linear-gradient(144deg,rgba(255, 98, 0, 0.5) 7%,rgba(55, 70, 227, 0.5) 100%);
-
-            .porcentConclusaoHtmlCSS{
-              height: 100%;
-              width: 80%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoJs{
-              height: 100%;
-              width: 80%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoTs{
-              height: 100%;
-              width: 35%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoSass{
-              height: 100%;
-              width: 90%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoGitGitHub{
-              height: 100%;
-              width: 95%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoReactJs{
-              height: 100%;
-              width: 70%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoNextJs{
-              height: 100%;
-              width: 60%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-          }
         }
-
-        .backEnd{
-          margin-bottom: 20px;
-
-          .periodo{
-            font-size: 0.8rem;
-            color: #CCC;
-            display: flex;
-            justify-content: flex-end;
-
-            .porcentagem{
-              color: white;
-              font-size: 1.5rem;
-            }
-          }
-          .progresso{
-            height: 13px;
-            border-radius: 5px;
-            background: linear-gradient(144deg,rgba(255, 98, 0, 0.5) 7%,rgba(55, 70, 227, 0.5) 100%);
-
-            .porcentConclusaoMongoDB{
-              height: 100%;
-              width: 40%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoFireBase{
-              height: 100%;
-              width: 50%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-          }
-        }
-
-
 
     }
     @media (max-width: 600px) {

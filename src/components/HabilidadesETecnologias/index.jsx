@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import Progresso from '../Progresso/Progresso';
 import Scroling from '../Scroling/Scroling';
 import { Section } from './style';
-
+import * as Data from '../../Data/habilidadeETecnologia';
 const stateInitialState = {
   frontEnd: true,
   cursos: false,
@@ -54,69 +55,17 @@ const HabilidadesETecnologias = () => {
             {qualificIsVisible.frontEnd && (
               <>
                 <Scroling>
-                  <div className="frontEnd">
-                    <h2>HTML5 e CSS3</h2>
-                    <div className="periodo">
-                      <span className="porcentagem">80%</span>
-                    </div>
-                    <div className="progresso">
-                      <div className="porcentConclusaoHtmlCSS"></div>
-                    </div>
-                  </div>
-                  <div className="frontEnd">
-                    <h2>JavaScript</h2>
-                    <div className="periodo">
-                      <span className="porcentagem">80%</span>
-                    </div>
-                    <div className="progresso">
-                      <div className="porcentConclusaoJs"></div>
-                    </div>
-                  </div>
-                  <div className="frontEnd">
-                    <h2>TypeScript</h2>
-                    <div className="periodo">
-                      <span className="porcentagem">35%</span>
-                    </div>
-                    <div className="progresso">
-                      <div className="porcentConclusaoTs"></div>
-                    </div>
-                  </div>
-                  <div className="frontEnd">
-                    <h2>SASS</h2>
-                    <div className="periodo">
-                      <span className="porcentagem">90%</span>
-                    </div>
-                    <div className="progresso">
-                      <div className="porcentConclusaoSass"></div>
-                    </div>
-                  </div>
-                  <div className="frontEnd">
-                    <h2>Git e GitHub</h2>
-                    <div className="periodo">
-                      <span className="porcentagem">95%</span>
-                    </div>
-                    <div className="progresso">
-                      <div className="porcentConclusaoGitGitHub"></div>
-                    </div>
-                  </div>
-                  <div className="frontEnd">
-                    <h2>React.js</h2>
-                    <div className="periodo">
-                      <span className="porcentagem">70%</span>
-                    </div>
-                    <div className="progresso">
-                      <div className="porcentConclusaoReactJs"></div>
-                    </div>
-                  </div>
-                  <div className="frontEnd">
-                    <h2>Next.js</h2>
-                    <div className="periodo">
-                      <span className="porcentagem">60%</span>
-                    </div>
-                    <div className="progresso">
-                      <div className="porcentConclusaoNextJs"></div>
-                    </div>
-                  </div>
+                  {Data.FrontEnd.map((curso) => {
+                    return (
+                      <Progresso
+                        key={curso.id}
+                        nome={curso.nome}
+                        local={curso.local}
+                        periodo={curso.periodo}
+                        porcentagem={curso.porcentagem}
+                      />
+                    );
+                  })}
                 </Scroling>
               </>
             )}
@@ -124,24 +73,17 @@ const HabilidadesETecnologias = () => {
             {qualificIsVisible.backEnd && (
               <>
                 <Scroling>
-                  <div className="backEnd">
-                    <h2>MongoDB</h2>
-                    <div className="periodo">
-                      <span className="porcentagem">40%</span>
-                    </div>
-                    <div className="progresso">
-                      <div className="porcentConclusaoMongoDB"></div>
-                    </div>
-                  </div>
-                  <div className="backEnd">
-                    <h2>FireBase</h2>
-                    <div className="periodo">
-                      <span className="porcentagem">50%</span>
-                    </div>
-                    <div className="progresso">
-                      <div className="porcentConclusaoFireBase"></div>
-                    </div>
-                  </div>
+                  {Data.BackEnd.map((curso) => {
+                    return (
+                      <Progresso
+                        key={curso.id}
+                        nome={curso.nome}
+                        local={curso.local}
+                        periodo={curso.periodo}
+                        porcentagem={curso.porcentagem}
+                      />
+                    );
+                  })}
                 </Scroling>
               </>
             )}

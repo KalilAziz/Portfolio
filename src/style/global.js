@@ -7,6 +7,16 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+:root{
+  --Gradient: linear-gradient(
+  144deg,
+  rgba(255, 98, 0, 1) 7%,
+  rgba(55, 70, 227, 1) 100%
+);
+
+  --GradientBorrado: linear-gradient(144deg,rgba(255, 98, 0, 0.5) 7%,rgba(55, 70, 227, 0.5) 100%)
+}
+
 html{
   @media (max-width: 1080px) {
     font-size: 93.75%;

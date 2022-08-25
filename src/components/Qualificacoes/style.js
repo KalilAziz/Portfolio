@@ -61,8 +61,6 @@ export const Section = styled.section`
             background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
           }`}
         }
-
-
       }
 
 
@@ -70,104 +68,6 @@ export const Section = styled.section`
         flex: 1;
         min-width: 300px;
         padding: 0px 30px;
-
-        .graduacao{
-          p{
-            margin-top: 10px;
-            color: #CCC;
-          }
-          .periodo{
-            font-size: 0.8rem;
-            color: #CCC;
-            display: flex;
-            justify-content: space-between;
-
-            .porcentagem{
-              color: white;
-              font-size: 1.5rem;
-            }
-          }
-          .progresso{
-            height: 13px;
-            border-radius: 5px;
-            background: linear-gradient(144deg,rgba(255, 98, 0, 0.5) 7%,rgba(55, 70, 227, 0.5) 100%);
-
-            .porcentConclusaoGradu{
-              height: 100%;
-              width: 55%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-          }
-        }
-
-        .cursos{
-          margin-bottom: 20px;
-          p{
-            margin-top: 10px;
-            color: #CCC;
-          }
-          .periodo{
-            font-size: 0.8rem;
-            color: #CCC;
-            display: flex;
-            justify-content: space-between;
-
-            .porcentagem{
-              color: white;
-              font-size: 1.5rem;
-            }
-          }
-          .progresso{
-            height: 13px;
-            border-radius: 5px;
-            background: linear-gradient(144deg,rgba(255, 98, 0, 0.5) 7%,rgba(55, 70, 227, 0.5) 100%);
-
-            .porcentConclusaoB7{
-              height: 100%;
-              width: 100%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoProgBr{
-              height: 100%;
-              width: 100%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoJavaType{
-              height: 100%;
-              width: 80%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-            .porcentConclusaoReactNext{
-              height: 100%;
-              width: 70%;
-              border-radius: 5px;
-              background: linear-gradient(144deg,rgba(255, 98, 0, 1) 7%,rgba(55, 70, 227, 1) 100%);
-            }
-
-          }
-        }
-
-        .experiencias{
-          p{
-            margin-top: 10px;
-            color: #CCC;
-          }
-          .periodo{
-            font-size: 0.8rem;
-            color: #CCC;
-            display: flex;
-            justify-content: space-between;
-          }
-        }
-
-
 
     }
     @media (max-width: 600px) {
