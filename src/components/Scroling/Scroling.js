@@ -9,7 +9,7 @@ const Scroling = ({ children, style }) => {
       scrollReveal().reveal(sectionRef.current, {
         reset: true,
         delay: 100,
-        distance: '1000px',
+        distance: '1000px', //1s
         origin: 'left',
       });
   }, []);
