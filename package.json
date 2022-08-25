@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "gitAdd": "git add .",
-    "gitCommit": "git commit -m 'alteração de scrollreveal'",
+    "gitCommit": "git commit -m 'alteração de scrollreveal para false'",
     "gitPush": " git push"
   },
   "eslintConfig": {

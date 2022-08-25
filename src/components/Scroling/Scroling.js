@@ -7,7 +7,7 @@ const Scroling = ({ children, style }) => {
   useEffect(() => {
     if (sectionRef.current)
       scrollReveal().reveal(sectionRef.current, {
-        reset: true,
+        reset: false,
         delay: 100,
         distance: '1000px', //1s
         origin: 'left',
