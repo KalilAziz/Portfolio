@@ -11,6 +11,7 @@ import HeaderComponent from './components/Header';
 import FooterComponent from './components/Footer';
 import Modal from 'react-modal';
 import ProjetosPage from './templates/Projetos';
+import Suporte from './templates/Suporte';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 Modal.setAppElement(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
       <Route index path="/" element={<App />} />
       <Route index path="/projetos" element={<ProjetosPage />} />
       <Route index path="/sobrenos" element={<SobreNos />} />
+      <Route index path="/suporte" element={<Suporte />} />
       <Route path="*" element={<Page404 />} />
     </Routes>
     <GlobalStyle />
