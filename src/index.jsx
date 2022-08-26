@@ -9,8 +9,10 @@ import { Page404 } from './templates/Page404';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import HeaderComponent from './components/Header';
 import FooterComponent from './components/Footer';
+import Modal from 'react-modal';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+Modal.setAppElement(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <HeaderComponent />

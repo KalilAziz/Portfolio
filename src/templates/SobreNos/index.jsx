@@ -1,7 +1,15 @@
+import Projetos from '../../components/Projetos';
+import SectionSecundaria from '../../components/SectionSegundaria';
+import { Container } from './styles';
+
 export default function SobreNos() {
   return (
-    <>
-      <h1>Sobre nos</h1>
-    </>
+    <Container>
+      <SectionSecundaria
+        titulo={'Projetos'}
+        descricao={'Quando coloco meu conhecimento em prática...'}
+      />
+      <Projetos />
+    </Container>
   );
 }

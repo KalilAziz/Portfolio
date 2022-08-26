@@ -23,7 +23,7 @@ const Scroling = ({ children, style }) => {
 
 // you can check scrolling like this:
 document.onscroll = function () {
-  console.log('scrawwwwl');
+  //console.log('scrawwwwl');
 };
 
 export default Scroling;

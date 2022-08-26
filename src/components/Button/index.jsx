@@ -1,7 +1,13 @@
 import P from 'prop-types';
 import styles from './styles.module.scss';
-const Button = ({ children }) => {
-  return <button className={styles.button}>{children}</button>;
+
+// eslint-disable-next-line
+const Button = ({ children, onClick }) => {
+  return (
+    <button onClick={onClick} className={styles.button}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;

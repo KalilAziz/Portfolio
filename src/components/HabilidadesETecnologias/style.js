@@ -71,7 +71,7 @@ export const Section = styled.section`
         padding: 0px 30px;
         }
 
-    }
+
     @media (max-width: 600px) {
         .buttons{
             margin: 0 auto;
@@ -82,8 +82,8 @@ export const Section = styled.section`
         .conteudo{
           margin: 30px 0;
         }
-        }
+      }
 
-
+    }
 
 `;
