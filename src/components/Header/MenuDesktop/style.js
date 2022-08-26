@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Header = styled.header`
   position: fixed;
@@ -19,11 +19,17 @@ export const Header = styled.header`
     display: flex;
     justify-content: space-between;
 
-    img {
-      width: 65px;
-      height: 65px;
+    a{
       display: block;
-      margin: auto 0;
+      display: flex;
+      justify-content: space-between;
+
+        img {
+        width: 65px;
+        height: 65px;
+        display: block;
+        margin: auto 0;
+      }
     }
 
     nav ul {
@@ -43,10 +49,45 @@ export const Header = styled.header`
         height: 100px;
 
         &:hover {
+          color: white;
           border-bottom: 5px solid rgba(255, 98, 0, 1);
         }
       }
     }
+
+    ${({ diretorio }) =>
+      diretorio === '/'
+        ? css`
+            .activeInicio{
+              color: white;
+              border-bottom: 5px solid rgba(255, 98, 0, 1);
+            }
+        `
+        : diretorio === '/projetos'
+        ? css`
+              .activeProjetos{
+                color: white;
+                border-bottom: 5px solid rgba(255, 98, 0, 1);
+              }
+            }
+        `
+        : diretorio === '/sobrenos'
+        ? css`
+              .activeSobre{
+                color: white;
+                border-bottom: 5px solid rgba(255, 98, 0, 1);
+              }
+            }
+        `
+        : diretorio === '/suporte'
+        ? css`
+              .activeSuporte{
+                color: white;
+                border-bottom: 5px solid rgba(255, 98, 0, 1);
+              }
+            }
+        `
+        : null}
 
     .sgvMenu{
       color: white;

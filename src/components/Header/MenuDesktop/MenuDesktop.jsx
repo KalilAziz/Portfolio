@@ -1,24 +1,29 @@
 import { RiMenu3Fill } from 'react-icons/ri';
 import Button from '../../Button';
 import { Header } from './style';
+
 // eslint-disable-next-line
 const MenuDesktop = ({ menuIsVisible, setMenuIsVisible }) => {
+  const diretorio = window.location.pathname;
+  console.log(diretorio);
   return (
-    <Header>
+    <Header diretorio={diretorio}>
       <div className="container">
-        <img src="./image/icon.png" alt="" />
+        <a href="/">
+          <img src="./image/icon.png" alt="" />
+        </a>
         <nav>
           <ul>
-            <li>
+            <li className="activeInicio">
               <a href="/">Início</a>
             </li>
-            <li>
+            <li className="activeProjetos">
               <a href="/projetos">Projetos</a>
             </li>
-            <li>
+            <li className="activeSobre">
               <a href="/sobrenos">Sobre</a>
             </li>
-            <li>
+            <li className="activeSuporte">
               <a href="/suporte">Suporte</a>
             </li>
           </ul>
